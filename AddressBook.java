@@ -95,7 +95,7 @@ public class AddressBook {
 				mapPesonAndCity.put(contactPerson, city);
 			}
 		}
-		for (Map.Entry m : map.entrySet()) {
+		for (Map.Entry m :mapPesonAndCity.entrySet()) {
 			ContactPerson contactPerson = (ContactPerson) m.getKey();
 			showContactPerson(contactPerson);
 
@@ -113,7 +113,7 @@ public class AddressBook {
 				mapPesonAndState.put(contactPerson, state);
 			}
 		}
-		for (Map.Entry m : map.entrySet()) {
+		for (Map.Entry m : mapPesonAndState.entrySet()) {
 			ContactPerson contactPerson = (ContactPerson) m.getKey();
 			showContactPerson(contactPerson);
 		}
